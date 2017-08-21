@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="menu">
+
+			<div class="menu-pages" id="main-page">
+				<div class="pages frontback"></div>
+				<div class="pages front"></div>
+			</div>
+			<div class="menu-pages" id="middle-page">
+				<div class="pages middle"></div>
+			</div>
+			<div class="menu-pages" id="last-page"></div>
+		</div>
+		<span id="open">Open</span>
+	</div>
+	<script>
+		var open = document.getElementById("open"),
+			wrapMenu = document.getElementById("main-page");
+		open.onclick = function(){
+			wrapMenu.style.cssText = "transform: rotateY(180deg); ";
+		}
+	</script>
+</body>
+</html>
